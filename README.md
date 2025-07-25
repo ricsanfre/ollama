@@ -10,6 +10,10 @@ Run Ollama an Open WebUI with docker compose.
 -  Disk space: The model files require at least 10GB of free space, but that is not enough. You should also have 20% of your total disk space available. Otherwise, you may encounter problems when starting Ollama, even if you have enough space for the model files.
 
 
+### Install NVDIA Container Toolkit
+Follow instructions in [NVIDIA Container Toolkit: Installation Guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
+
+
 ## Instructions
 
 1. **Clone this repository** (if you haven't already):
@@ -66,10 +70,13 @@ services:
 
 -   List ollama models
     ```shell
-    docker-compose exec -it ollama ollama list
+    docker compose exec -it ollama ollama list
     ```
 -   Installing a new model
     ```shell
-    docker-compose exec -it ollama ollama pull ${MODEL_NAME}
+    docker compose exec -it ollama ollama pull ${MODEL_NAME}
     ```
 
+## References
+
+-  https://medium.com/@srpillai/how-to-run-ollama-locally-on-gpu-with-docker-a1ebabe451e0
