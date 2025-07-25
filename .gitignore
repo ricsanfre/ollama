@@ -1,0 +1,22 @@
+# Ignore Ollama models directory
+models/
+
+# Ignore Open WebUI backend data directory
+backend/data/
+
+# Ignore common system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore log files
+*.log
+
+# Ignore
